@@ -10,7 +10,7 @@ application=Flask(__name__)
 
 app=application
 
-## Route for a home page
+## Route for a index page
 
 @app.route('/')
 def index():
@@ -39,7 +39,7 @@ def predict_datapoint():
         print("Mid Prediction")
         results=predict_pipeline.predict(pred_df)
         print("after Prediction")
-        return render_template('home.html',results=results[0])
+        return render_template('index.html',results=results[0])
     
 
 if __name__=="__main__":
