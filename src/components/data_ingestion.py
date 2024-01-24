@@ -16,9 +16,9 @@ from src.components.model_trainer import ModelTrainer
 # any input required we will give through this class
 @dataclass # we don't need to use __init__ to define our variables using dataclass
 class DataIngestionConfig:
-    train_data_path: str=os.path.join('artifact',"train.csv") # all the outputs will be stored inside the artifact folder
-    test_data_path: str=os.path.join('artifact',"test.csv")
-    raw_data_path: str=os.path.join('artifact',"data.csv")
+    train_data_path: str=os.path.join('artifacts',"train.csv") # all the outputs will be stored inside the artifacts folder
+    test_data_path: str=os.path.join('artifacts',"test.csv")
+    raw_data_path: str=os.path.join('artifacts',"data.csv")
 
 class DataIngestion:
     def __init__(self):
