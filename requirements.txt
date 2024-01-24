@@ -6,4 +6,3 @@ catboost
 xgboost 
 dill
 Flask
-#-e . comment this after the first installment
